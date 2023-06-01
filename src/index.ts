@@ -1,11 +1,16 @@
 import 'dotenv/config';
 import fastify from 'fastify';
 import { env } from './env';
+import { getLogger } from './logger';
 
-const server = fastify({ logger: true });
+const server = fastify({ logger: getLogger() });
 
 server.get('/', async () => {
   return { hello: 'world' };
+});
+
+server.get('/err', async (request, reply) => {
+  reply.status(400).send(new Error('Some error'));
 });
 
 const start = async () => {
