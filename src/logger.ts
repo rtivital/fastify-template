@@ -1,4 +1,4 @@
-import { env } from './env';
+import { env } from './env.js';
 import { FastifyServerOptions } from 'fastify';
 
 export function getLogger(): FastifyServerOptions['logger'] {

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import fastify from 'fastify';
-import { env } from './env';
-import { getLogger } from './logger';
+import { env } from './env.js';
+import { getLogger } from './logger.js';
 
 const server = fastify({ logger: getLogger() });
 

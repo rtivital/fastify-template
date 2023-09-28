@@ -1,0 +1,8 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "execMap": {
+    "ts": "node --loader ts-node/esm -r tsconfig-paths/register"
+  },
+  "ignore": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+}
