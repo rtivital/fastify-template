@@ -13,12 +13,8 @@ if (env.CORS !== '') {
   server.register(cors, { origin: env.CORS.split(',') });
 }
 
-server.get('/api', async () => {
-  return { hello: 'world' };
-});
-
-server.get('/err', async (request, reply) => {
-  reply.status(400).send(new Error('Some error'));
+server.get('/api/healthcheck', async () => {
+  return { ok: true };
 });
 
 export { server };
