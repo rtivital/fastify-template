@@ -3,9 +3,13 @@ import fastify from 'fastify';
 import { env } from './env.js';
 import { getLogger } from './logger.js';
 
-const server = fastify({ logger: getLogger() });
+const server = fastify({
+  logger: getLogger(),
+  ignoreDuplicateSlashes: true,
+  ignoreTrailingSlash: true,
+});
 
-server.get('/', async () => {
+server.get('/api', async () => {
   return { hello: 'world' };
 });
 
