@@ -10,7 +10,8 @@
   "scripts": {
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=development nodemon --es-module-specifier-resolution=node src/index.ts",
-    "build": "tsc",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
     "lint": "eslint src --cache",
     "typecheck": "tsc --noEmit",
     "prettier:test": "prettier --check \"**/*.{ts,tsx}\"",
@@ -25,6 +26,7 @@
     "nodemon": "^3.0.1",
     "pino-pretty": "^10.2.0",
     "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
