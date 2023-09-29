@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # macOS
-.DS_Store
+# .DS_Store
