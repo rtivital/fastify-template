@@ -13,7 +13,9 @@
     "build": "tsc",
     "lint": "eslint src --cache",
     "typecheck": "tsc --noEmit",
-    "test": "npm run typecheck && npm run lint"
+    "prettier:test": "prettier --check \"**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
+    "test": "npm run prettier:test && npm run typecheck && npm run lint"
   },
   "devDependencies": {
     "@types/node": "^20.7.1",
@@ -22,6 +24,7 @@
     "eslint": "^8.50.0",
     "nodemon": "^3.0.1",
     "pino-pretty": "^10.2.0",
+    "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
