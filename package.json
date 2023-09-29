@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "exports": "./dist/index.js",
-  "repository": "git@github.com:rtivital/fastify-tutorial.git",
+  "repository": "git@github.com:rtivital/fastify-template.git",
   "author": "Vitaly Rtishchev <rtivital@gmail.com>",
   "license": "MIT",
   "scripts": {
