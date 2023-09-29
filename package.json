@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=production node dist/index.js",
-    "dev": "NODE_ENV=development nodemon --es-module-specifier-resolution=node src/index.ts",
+    "dev": "NODE_ENV=development nodemon --es-module-specifier-resolution=node -r dotenv/config src/index.ts",
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
     "lint": "eslint src --cache",
