@@ -5,9 +5,10 @@ A basic fastify server template with TypeScript, ESM, ESLint and Prettier. Node.
 ## Getting started
 
 1. Clone or download the repository or click "Use this template" button on GitHub.
-2. Install dependencies: `yarn`
-3. Create `.env` file from `.env.example`: `cp .env.example .env`. Change the values if needed.
-4. Run the server: `npm run dev`
+2. Run `nvm use` – it will install the required Node.js version if it is not installed yet.
+3. Install dependencies: `yarn`
+4. Create `.env` file from `.env.example`: `cp .env.example .env`. Change the values if needed.
+5. Run the server: `npm run dev`
 
 ## Build for production
 
