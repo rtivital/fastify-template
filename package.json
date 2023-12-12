@@ -1,6 +1,11 @@
 {
   "name": "fastify-template",
   "version": "1.0.0",
+  "packageManager": "yarn@4.0.2",
+  "engines": {
+    "node": ">=20.9.0",
+    "yarn": ">=3.0.0"
+  },
   "main": "index.js",
   "type": "module",
   "exports": "./dist/index.js",
