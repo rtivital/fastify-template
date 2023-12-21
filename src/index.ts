@@ -1,5 +1,5 @@
-import { server } from './server.js';
 import { env } from './env.js';
+import { server } from './server.js';
 
 const start = async () => {
   try {

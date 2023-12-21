@@ -1,7 +1,7 @@
-import fastify from 'fastify';
 import cors from '@fastify/cors';
-import helmet from '@fastify/helmet';
 import formBody from '@fastify/formbody';
+import helmet from '@fastify/helmet';
+import fastify from 'fastify';
 import { env } from './env.js';
 import { getLogger } from './logger.js';
 
