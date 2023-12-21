@@ -935,6 +935,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-security@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "eslint-plugin-security@npm:2.1.0"
+  dependencies:
+    safe-regex: "npm:^2.1.1"
+  checksum: 55e1576dc0a4ae7f6c9fd009a7c619c809d321c84b2f6e80792fa3927fb8c4e4641996ff73fbb3fbfa32b5a816e389a59072eb003e56794ac78dc1b3d29fefd8
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^7.2.2":
   version: 7.2.2
   resolution: "eslint-scope@npm:7.2.2"
@@ -1204,6 +1213,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^6.14.0"
     dotenv: "npm:^16.3.1"
     eslint: "npm:^8.55.0"
+    eslint-plugin-security: "npm:^2.1.0"
     fastify: "npm:^4.24.3"
     nodemon: "npm:^3.0.2"
     pino-pretty: "npm:^10.2.3"
@@ -2396,6 +2406,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"regexp-tree@npm:~0.1.1":
+  version: 0.1.27
+  resolution: "regexp-tree@npm:0.1.27"
+  bin:
+    regexp-tree: bin/regexp-tree
+  checksum: f636f44b4a0d93d7d6926585ecd81f63e4ce2ac895bc417b2ead0874cd36b337dcc3d0fedc63f69bf5aaeaa4340f36ca7e750c9687cceaf8087374e5284e843c
+  languageName: node
+  linkType: hard
+
 "require-from-string@npm:^2.0.2":
   version: 2.0.2
   resolution: "require-from-string@npm:2.0.2"
@@ -2482,6 +2501,15 @@ __metadata:
   dependencies:
     ret: "npm:~0.2.0"
   checksum: f499e4fc69caafd7dd8023759e69a32991baa66e90bec5e2a7777b907943b27068dbff4e7a32cc8231f1354fcb779142f419e85498ae1e37384dc60619509c27
+  languageName: node
+  linkType: hard
+
+"safe-regex@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "safe-regex@npm:2.1.1"
+  dependencies:
+    regexp-tree: "npm:~0.1.1"
+  checksum: 53eb5d3ecf4b3c0954dff465eb179af4d2f5f77f74ba7b57489adbc4fa44454c3d391f37379cd28722d9ac6fa5b70be3f4645d4bd25df395fd99b934f6ec9265
   languageName: node
   linkType: hard
 
