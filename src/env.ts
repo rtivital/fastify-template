@@ -5,6 +5,7 @@ const envSchema = z.object({
   HOST: z.string().default('localhost'),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('production'),
   CORS: z.string().default(''),
+  LOG_LEVEL: z.enum(['fatal', 'error', 'warn', 'info', 'debug']).default('error'),
 });
 
 export const env = envSchema.parse(process.env);
